@@ -1,0 +1,528 @@
+{
+  "$schema": "https://omniwrap.dev/schemas/artifact-manifest/v1.json",
+  "artifact": {
+    "capabilities": [
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "idempotency-key-enables-safe-retries",
+      "minimum-r-4.1.0-runtime",
+      "oauth-client-credentials-token-provider",
+      "request-lifecycle-hooks",
+      "sse-and-ndjson-streaming",
+      "structured-http-errors",
+      "timeouts-and-idempotent-retries",
+      "typed-page-envelope-with-items-continuation-and-response-metadata",
+      "webhook-signature-verification",
+      "websocket-client-helper"
+    ],
+    "contract_capabilities": [
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "idempotency-key-enables-safe-retries",
+      "minimum-r-4.1.0-runtime",
+      "oauth-client-credentials-token-provider",
+      "request-lifecycle-hooks",
+      "structured-http-errors",
+      "timeouts-and-idempotent-retries"
+    ],
+    "limitations": [
+      "absent-and-null-optional-fields-conflated-by-record-models",
+      "async-client-variant-not-generated",
+      "base-url-query-and-fragment-not-supported",
+      "custom-pagination-not-generated",
+      "date-and-decimal-formats-mapped-to-string-and-floating-point",
+      "deprecation-documented-in-text-only",
+      "multipart-and-form-builders-not-generated",
+      "mutual-tls-setup-not-generated",
+      "oneof-anyof-use-lossless-object-wrappers",
+      "opentelemetry-tracing-not-generated",
+      "pagination-iterators-not-generated",
+      "raw-response-body-exposed-only-for-binary-media",
+      "runtime-schema-validation-not-generated",
+      "sdk-tests-not-generated",
+      "unknown-fields-preserved-only-where-additional-properties-declared"
+    ],
+    "maturity": "experimental",
+    "runtime_capabilities": [
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "idempotency-key-enables-safe-retries",
+      "minimum-r-4.1.0-runtime",
+      "oauth-client-credentials-token-provider",
+      "request-lifecycle-hooks",
+      "sse-and-ndjson-streaming",
+      "structured-http-errors",
+      "timeouts-and-idempotent-retries",
+      "typed-page-envelope-with-items-continuation-and-response-metadata",
+      "webhook-signature-verification",
+      "websocket-client-helper"
+    ],
+    "type": "r-sdk",
+    "vocabulary_features": [
+      {
+        "details": {
+          "capabilities": [
+            "api-key-bearer-basic-authentication"
+          ],
+          "limitations": []
+        },
+        "id": "auth.api-key-bearer-basic",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "mutual-tls-setup-not-generated"
+          ]
+        },
+        "id": "auth.mutual-tls",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "oauth-client-credentials-token-provider"
+          ],
+          "limitations": []
+        },
+        "id": "auth.oauth",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "async-client-variant-not-generated"
+          ]
+        },
+        "id": "client.async",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "executable-http-client"
+          ],
+          "limitations": []
+        },
+        "id": "client.executable",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "structured-http-errors"
+          ],
+          "limitations": []
+        },
+        "id": "errors.typed",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "oneof-anyof-use-lossless-object-wrappers"
+          ]
+        },
+        "id": "models.composition",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "date-and-decimal-formats-mapped-to-string-and-floating-point"
+          ]
+        },
+        "id": "models.dates-decimals",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "deprecation-documented-in-text-only"
+          ]
+        },
+        "id": "models.deprecation",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "unknown-fields-preserved-only-where-additional-properties-declared"
+          ]
+        },
+        "id": "models.extensible",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "absent-and-null-optional-fields-conflated-by-record-models"
+          ]
+        },
+        "id": "models.nullability",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "runtime-schema-validation-not-generated"
+          ]
+        },
+        "id": "models.runtime-validation",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "request-lifecycle-hooks"
+          ],
+          "limitations": [
+            "opentelemetry-tracing-not-generated"
+          ]
+        },
+        "id": "observability.request-hooks",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "pagination-iterators-not-generated"
+          ]
+        },
+        "id": "pagination.auto-iteration",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "custom-pagination-not-generated"
+          ]
+        },
+        "id": "pagination.custom",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "typed-page-envelope-with-items-continuation-and-response-metadata"
+          ],
+          "limitations": []
+        },
+        "id": "pagination.typed-envelope",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "idempotency-key-enables-safe-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.idempotency-keys",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "timeouts-and-idempotent-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.retries",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "timeouts-and-idempotent-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.timeouts",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "minimum-r-4.1.0-runtime"
+          ],
+          "limitations": []
+        },
+        "id": "runtime.minimum-version",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "raw-response-body-exposed-only-for-binary-media"
+          ]
+        },
+        "id": "streaming.raw-response",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "sse-and-ndjson-streaming"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.sse",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "websocket-client-helper"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.websocket",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "sdk-tests-not-generated"
+          ]
+        },
+        "id": "testing.generated-tests",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "webhook-signature-verification"
+          ],
+          "limitations": []
+        },
+        "id": "webhook.verification",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "configurable-base-url"
+          ],
+          "limitations": [
+            "base-url-query-and-fragment-not-supported"
+          ]
+        },
+        "id": "wire.base-url",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "multipart-and-form-builders-not-generated"
+          ]
+        },
+        "id": "wire.request-content",
+        "sense": "partial"
+      }
+    ],
+    "vocabulary_version": "1.21.0"
+  },
+  "files": {
+    ".omniwrap-skill-manifest.json": "6c3eaa9f9c9e846bed7dfa0031197f65f5c2629efd66eb25b5e275659623366f",
+    "AGENT_SESSION.md": "2631dd724dd7d5475f0542548b836728069228901679bb32888f3be1484f05bd",
+    "DESCRIPTION": "61f92ee13eb83e6b44274bf69e5138aa198606a6ca2758cd00a2b65f29502bb1",
+    "LICENSE": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128",
+    "NAMESPACE": "3df25f78197b6edbbedb8e76a463bb8c548e825be1ead3c35f94c808b6c6570e",
+    "R/agent_session.R": "c84878892df2ae075f4aca6287afc5e72593265bc45cd3661e35c2d80fd233b8",
+    "R/client.R": "4bab90b03165cd76bba40f088d2bff0f47889f3607c06ff86fc27f701a3242fb",
+    "README.md": "a5520a4ac107df6b9ed0db8bc7a299b3055bed796b6b7b3f3dee3b098a0e0ca8",
+    "SKILL.md": "c6d777bda5d31d24b68a15e6879b131538da9f815c424b13dab28938ce504539",
+    "agent-session.json": "a423d4f9c6d90f217233d6bbf7363e188ac0b0b5e3c72538944e35a662d3eb1d",
+    "api.md": "92e13770fd7047acb9535cf852b3239ea7a9d32e9da60d9ba8a0c5aadb839ab9",
+    "omniwrap-r-package.json": "eaade09128078863d5f00e4b5d5db601108ab8c114517b3be71c4f0d8b0cad84"
+  },
+  "generator": {
+    "name": "omniwrap",
+    "version": "2.0.0"
+  },
+  "license": {
+    "id": null,
+    "kind": "proprietary",
+    "sha256": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128"
+  },
+  "manifest_version": "1.3.0",
+  "security": {
+    "automatic_token_acquisition": true,
+    "credentials_persisted": false,
+    "network_access": "only when caller invokes an SDK operation",
+    "transport_injection": true
+  },
+  "source": {
+    "diagnostics": [],
+    "diagnostics_omitted_count": 0,
+    "diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "ecosystem": "semantic",
+    "legacy_ir_sha256": null,
+    "location": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358",
+    "name": "JackAI Platform OS Hub API (public subset)",
+    "normalization_diagnostic_count": 0,
+    "package_metadata": {
+      "contact_email": null,
+      "contact_name": null,
+      "contact_url": null,
+      "license_identifier": null,
+      "license_name": null,
+      "license_url": null,
+      "provenance": null,
+      "terms_of_service_url": null
+    },
+    "projection_loss_count": 0,
+    "provenance": [
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 10,
+        "pointer": "/servers/0/url",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 29,
+        "pointer": "/paths/~1health/get",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 40,
+        "pointer": "/paths/~1user~1auth~1signup-policy/get",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 73,
+        "pointer": "/paths/~1user~1me/get",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 106,
+        "pointer": "/paths/~1v1~1kernel~1usage~1fail/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 51,
+        "pointer": "/paths/~1user~1auth~1waitlist/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 62,
+        "pointer": "/paths/~1user~1auth~1login/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 84,
+        "pointer": "/paths/~1v1~1kernel~1usage~1reserve/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 95,
+        "pointer": "/paths/~1v1~1kernel~1usage~1finalize/post",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 110,
+        "pointer": "/paths/~1v1~1kernel~1usage~1fail/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 33,
+        "pointer": "/paths/~1health/get/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 44,
+        "pointer": "/paths/~1user~1auth~1signup-policy/get/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 55,
+        "pointer": "/paths/~1user~1auth~1waitlist/post/responses/202",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 66,
+        "pointer": "/paths/~1user~1auth~1login/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 77,
+        "pointer": "/paths/~1user~1me/get/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 88,
+        "pointer": "/paths/~1v1~1kernel~1usage~1reserve/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 99,
+        "pointer": "/paths/~1v1~1kernel~1usage~1finalize/post/responses/200",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      },
+      {
+        "column": 21,
+        "confidence": 1.0,
+        "line": 21,
+        "pointer": "/components/securitySchemes/bearerAuth",
+        "source": "local://323b0c99dfea9f8bd8488628568e62560ed5a40570a3426c49b84c5869c66358"
+      }
+    ],
+    "provenance_count": 18,
+    "provenance_omitted_count": 0,
+    "provenance_sha256": "8101a07dfa350d3521f16631b33c301d880f753bb1751d16ad9b944f13b9208f",
+    "semantic_fingerprint": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+    "semantic_ir_sha256": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+    "semantic_ir_version": "1.14.0",
+    "version": "1.0.0"
+  }
+}

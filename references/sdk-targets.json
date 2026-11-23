@@ -1,0 +1,76 @@
+{
+  "contract_fingerprint": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "JackAiPlatformOsHubApiPublicSubsetR@1.0.0",
+        "ecosystem": "CRAN",
+        "entry": "omniwrap_client",
+        "import": "library(JackAiPlatformOsHubApiPublicSubsetR)"
+      },
+      "operations": {
+        "failUsageQuota": {
+          "member": "fail_usage_quota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/fail",
+          "resource": "kernel",
+          "signature": "fail_usage_quota <- function(client)"
+        },
+        "finalizeUsageQuota": {
+          "member": "finalize_usage_quota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/finalize",
+          "resource": "kernel",
+          "signature": "finalize_usage_quota <- function(client)"
+        },
+        "getCurrentUser": {
+          "member": "get_current_user",
+          "method": "GET",
+          "path": "/user/me",
+          "resource": "user",
+          "signature": "get_current_user <- function(client)"
+        },
+        "getHealth": {
+          "member": "get_health",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "get_health <- function(client)"
+        },
+        "getSignupPolicy": {
+          "member": "get_signup_policy",
+          "method": "GET",
+          "path": "/user/auth/signup-policy",
+          "resource": "user",
+          "signature": "get_signup_policy <- function(client)"
+        },
+        "loginUser": {
+          "member": "login_user",
+          "method": "POST",
+          "path": "/user/auth/login",
+          "resource": "user",
+          "signature": "login_user <- function(client)"
+        },
+        "reserveUsageQuota": {
+          "member": "reserve_usage_quota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/reserve",
+          "resource": "kernel",
+          "signature": "reserve_usage_quota <- function(client)"
+        },
+        "submitWaitlistRequest": {
+          "member": "submit_waitlist_request",
+          "method": "POST",
+          "path": "/user/auth/waitlist",
+          "resource": "user",
+          "signature": "submit_waitlist_request <- function(client)"
+        }
+      },
+      "package_directory": "../jackaiplatformoshubapipublicsubsetr-r-sdk",
+      "package_manifest": "DESCRIPTION",
+      "reference": "api.md",
+      "renderer": "r"
+    }
+  ]
+}
